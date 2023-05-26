@@ -26,16 +26,16 @@ http://www.tooplate.com/view/2111-pro-line
 
   <body>
     <!-- page header -->
-    <div class="container" id="home">
+    <div id="home">
       <div class="col-12 text-center">
         <div class="tm-page-header">
           <!--
           <i class="fas fa-4x fa-chart-bar mr-4"></i>
           <h1 class="d-inline-block text-uppercase">Pro Line</h1>
           -->
-          <img class="fas fa-4x fa-chart-bar mr-4" src="img/mini-l.gif" />
-          <img class="fas fa-4x fa-chart-bar mr-4" src="img/LogoWebsite2.gif" />
-          <img class="fas fa-4x fa-chart-bar mr-4" src="img/mini-r.gif" />
+          <img class="fas fa-4x fa-chart-bar car-" src="img/mini-l.gif" />
+          <img class="fas fa-4x fa-chart-bar" src="img/LogoWebsite2.gif" />
+          <img class="fas fa-4x fa-chart-bar" src="img/mini-r.gif" />
         </div>
       </div>
     </div>
@@ -60,21 +60,24 @@ http://www.tooplate.com/view/2111-pro-line
               <div class="collapse navbar-collapse" id="tmMainNav">
                 <ul class="navbar-nav mx-auto tm-navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href=""
-                      >Home <span class="sr-only">(current)</span></a
-                    >
+                    <a class="nav-link" rel="nofollow" href="index.html">Home</a>
+                  </li>
+
+
+                  <!-- this button works! -->
+                  <li class="nav-item">
+                    <a class="nav-link quick-booking-button">Book Online</a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a class="nav-link" rel="nofollow" href="https://youtu.be/qbnt_vmk4fU">Specials</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Book Online</a>
+                    <a class="nav-link" rel="nofollow" href="https://youtu.be/qbnt_vmk4fU">MINI Service</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Specials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">MINI Service</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Contact Us</a>
+                    <a class="nav-link" rel="nofollow" href="https://youtu.be/qbnt_vmk4fU">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -84,7 +87,7 @@ http://www.tooplate.com/view/2111-pro-line
       </div>
     </div>
 
-    <!-- Video Banner -->
+    <!-- Banner -->
     <section class="tm-banner-section" id="tmVideoSection">
       <div class="container tm-banner-text-container">
         <div class="row">
@@ -95,7 +98,9 @@ http://www.tooplate.com/view/2111-pro-line
                 Stop paying too much for your auto repairs.
               </p>
               
-              <a class="button" href="https://youtu.be/qbnt_vmk4fU">Book Now!</a>
+              <!-- Booking Button -->
+              <!-- this button works! -->
+              <a class="button quick-booking-button">Book Now!</a>
 
             </header>
           </div>
@@ -103,22 +108,22 @@ http://www.tooplate.com/view/2111-pro-line
       </div>
 
       <!-- background image -->
-      <img id="hero-img" src="img/outside.jpg" />
+      <img id="hero-img" class="blur-image" src="img/outside.jpg" />
     </section>
     <!-- Features -->
     <div class="container tm-features-section" id="features">
       <section class="col-md-6 col-sm-12 tm-feature-block">
         <header class="tm-feature-header">
-          <img class="page-image" src="img/diagnostics.jpg" />
+          <img class="page-image" src="img/workshop.jpg" />
           <div class="row tm-features-row">
             <p>
-              REAL AUTOMOTIVE has 40 years' combined experience in automotive repairs. We pride ourselves on the outstanding service we provide at an affordable price.
+              REAL AUTOMOTIVE has over 40 years of combined experience in automotive repairs. We pride ourselves on the outstanding service we provide at an affordable price.
             </p>
             <p>
-              Our qualified mechanics specialise in professional, friendly and reliable service and have worked in many workshops throughout Australia. 
+              Our qualified mechanics specialise in professional, friendly and reliable service and have worked in many workshops throughout Australia.
             </p>
             <p>
-              We have experience in all mechanical repairs from cars and trucks to equipment including diesel and petrol / gas engines. 
+              We have experience in all mechanical repairs from cars and trucks to equipment including diesel and petrol / gas engines.
             </p>
           </div>
         </header>
@@ -136,7 +141,7 @@ http://www.tooplate.com/view/2111-pro-line
               Experience the right diagnosis the first time!
             </p>
           </div>
-          <img class="page-image"  src="img/workshop.jpg" />
+          <img class="page-image"  src="img/diagnostics.jpg" />
         </header>
       </section>
     </div>
@@ -145,7 +150,7 @@ http://www.tooplate.com/view/2111-pro-line
     <footer class="container tm-footer">
       <div class="row tm-footer-row">
         <p class="col-md-10 col-sm-12 mb-0">
-          REAL AUTOMOTIVE Website Redesign by jmou0015 - Template:
+          <a rel="nofollow" href="https://realautomotive.com.au/" class="tm-footer-link">REAL AUTOMOTIVE</a> Website Redesign by jmou0015 - Template:
           <a rel="nofollow" href="https://www.facebook.com/tooplate" class="tm-footer-link">Tooplate</a>
         </p>
         <div class="col-md-2 col-sm-12 scrolltop">
@@ -154,10 +159,62 @@ http://www.tooplate.com/view/2111-pro-line
       </div>
     </footer>
 
+    
+    <!-- booking overlay -->
+    <div class="booking-form-overlay">
+      <div class="button booking-form-close-button">
+        X
+      </div>
+      
+      <p>
+        Looking to book a service? Enter your details below and we'll help you find a time.
+      </p>
+
+      <form style="text-align: center;"  method="post" action="">
+        <p>
+          <label>Name:<br />
+            <input class="booking-form-box" name="name" required></input>
+          </label>
+        </p>
+
+        <p>
+          <label>Phone / Email:<br />
+            <input class="booking-form-box" name="contact" required></input>
+          </label>
+        </p>
+
+        <p>
+          <label>Car Make / Model:<br />
+            <input class="booking-form-box" name="car-details" required></input>
+          </label>
+        </p>
+
+        <p>
+          <label>Preferred Date:<br />
+            <input type="date" class="booking-form-box" name="preferred-date" required></input>
+          </label>
+        </p>
+
+        <p>
+          <label>Details of Service:<br />
+            <textarea class="booking-form-box" name="details" rows="10" required></textarea>
+          </label>
+        </p>
+
+
+        <button class="button" type="submit">Submit</button>
+
+      </form>
+    </div>
+
+
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Single Page Nav plugin works with this version of jQuery -->
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/booking-button-script.js"></script>
+
     <script>
       /**
        * detect IE

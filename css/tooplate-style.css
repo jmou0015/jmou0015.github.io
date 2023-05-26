@@ -26,11 +26,18 @@ body {
   border: 1px solid #484;
   padding: 16px;
   border-radius: 32px;
-  box-shadow: 0 1px 16px black;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .page-image {
   border-radius: 16px;
+
+  min-width: 250px;
+}
+
+.blur-image {
+  filter: blur(5px);
 }
 
 .button:hover {
@@ -44,6 +51,44 @@ body {
   margin: 16px;
   margin-bottom: 48px;
 }
+
+.booking-form-overlay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  background-color: #23321b;
+  width: 80%;
+  height: 80%;
+
+  background: #23321b;
+  border: 1px solid #484;
+  padding: 16px;
+  border-radius: 32px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+
+  color: white;
+  text-align: center;
+
+  overflow-y: auto;
+}
+
+.booking-form-close-button {
+  width: 64px;
+  height: 64px;
+
+  right: 0;
+  margin-bottom: 1em;
+}
+
+.booking-form-box {
+  border-radius: 8px;
+  padding: 4px;
+
+}
+
 
 
 
@@ -74,11 +119,6 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
-}
-
-p {
-  line-height: 1.7;
-  margin-bottom: 35px;
 }
 
 p:last-child {
@@ -136,12 +176,13 @@ p:last-child {
 }
 
 .navbar-light .navbar-toggler {
-  background-color: black;
+  background-color: #46b346;
 }
 
 .navbar {
   padding-top: 3px;
   padding-bottom: 3px;
+  height: 60px;
 }
 
 .tm-navbar-nav {
@@ -551,8 +592,8 @@ figure {
   }
 
   #tmMainNav {
-    background: white;
-    border: 1px solid #c6c6c6;
+    background: #23321b;
+    border-radius: 32px;
   }
 
   .navbar-light .navbar-toggler {
